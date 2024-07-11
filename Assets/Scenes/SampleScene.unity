@@ -1109,19 +1109,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28dd054fbef7ebb489856e8f76e9b2e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dumping: 0
-  PrefabBloco:
-  - {fileID: 1379613725}
-  - {fileID: 1844984404}
-  velocidades:
+  velocity:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
-  posicoes:
+  aceleration:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  lastPosition:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  positions:
   - {x: 46, y: 0, z: 0}
   - {x: 50, y: 0, z: 0}
-  aceleracoes:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
+  partitionWall:
+  - {x: 42, y: 0, z: 0}
+  - {x: 54, y: 0, z: 0}
+  prefabBox:
+  - {fileID: 1379613725}
+  - {fileID: 1844984404}
+  objects: []
   mass:
   - 1
   - 1
@@ -1133,9 +1139,7 @@ MonoBehaviour:
   - 4
   - 4
   - 4
-  anteparos:
-  - {x: 42, y: 0, z: 0}
-  - {x: 54, y: 0, z: 0}
+  collisionDumping: 0.8
 --- !u!4 &577982983
 Transform:
   m_ObjectHideFlags: 0
@@ -1244,7 +1248,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: v0.1.2
+  m_text: v0.1.3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1634,7 +1638,7 @@ MonoBehaviour:
   - {fileID: 912647819}
   - {fileID: 2093039796}
   simuladorScript: {fileID: 577982982}
-  tamanhoMola: 13.5
+  springSize: 13.2
 --- !u!1 &741619789
 GameObject:
   m_ObjectHideFlags: 0
@@ -2385,7 +2389,7 @@ MonoBehaviour:
   - {fileID: 1877727497}
   - {fileID: 1876641985}
   simuladorScript: {fileID: 577982982}
-  tamanhoMola: 13.5
+  springSize: 13.2
 --- !u!1 &989709401
 GameObject:
   m_ObjectHideFlags: 0
@@ -4683,7 +4687,7 @@ MonoBehaviour:
   - {fileID: 1456382153}
   - {fileID: 796147497}
   simuladorScript: {fileID: 577982982}
-  tamanhoMola: 13.5
+  springSize: 13.2
 --- !u!1 &1985951676
 GameObject:
   m_ObjectHideFlags: 0

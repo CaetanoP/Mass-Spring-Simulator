@@ -10,14 +10,6 @@ public class Setup : MonoBehaviour
     private Slider[] sliders;
     public Simulator simulatorScript;
 
-    void Awake()
-    {
-
-    }
-    void Update()
-    {
-
-    }
     public void ChangeMassL()
     {
         Debug.Log("ChangeMass");
